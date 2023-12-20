@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect to WiFi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<h2>WiFi连接页面</h2>
+<form id="wifiForm" action="/submit" method="post">
+  <label for="ssid">WiFi SSID:</label>
+  <input type="text" id="ssid" name="ssid" required>
+  <br>
+  <label for="password">WiFi Password:</label>
+  <input type="password" id="password" name="password" required placeholder="输入密码">
+  <br>
+  <input type="hidden" id="hidden" name="hidden">
+  <input class="button" type="submit" value="Submit">
+</form>
+<p id="statusMessage"></p>
+</body>
+</html>

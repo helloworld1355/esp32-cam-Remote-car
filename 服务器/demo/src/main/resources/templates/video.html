@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connection Success</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<h2>Connection False</h2>
+<p id="statusMessage">连接失败！</p>
+<button type="button" onclick="returnBack()">返回连接页面</button>
+<script>
+  function returnBack() {
+    window.location.href = "/";
+  }
+</script>
+</body>
+</html>
